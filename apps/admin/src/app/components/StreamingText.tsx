@@ -55,10 +55,14 @@ function StreamingComponent() {
 		<div>
 			<style>{cursorStyle}</style>
 			<button
+				style={{
+					marginBottom: "10px",
+				}}
 				onClick={startStreaming}
 				disabled={isStreaming}>
 				{isStreaming ? "Streaming..." : "Start Streaming"}
 			</button>
+
 			<div
 				style={{
 					background: "#f0f0f0",
@@ -67,6 +71,7 @@ function StreamingComponent() {
 					fontFamily: "monospace",
 					whiteSpace: "pre-wrap",
 					minHeight: "100px",
+					width: "768px",
 				}}
 				// Add the blinking cursor class only when streaming
 				className={isStreaming ? "blinking-cursor" : ""}>

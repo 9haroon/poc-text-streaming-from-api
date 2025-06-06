@@ -10,6 +10,7 @@ function App() {
 				Admin <br />
 				<span>Kitchen Sink</span>
 			</h1>
+			<StreamingText />
 			<CounterButton />
 			<p className="description">
 				Built With{" "}
@@ -24,7 +25,6 @@ function App() {
 					newTab>
 					Vite
 				</Link>
-				<StreamingText />
 			</p>
 		</div>
 	);
